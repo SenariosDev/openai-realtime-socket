@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/ask_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp" />
+
+    <ScrollView
+        android:id="@+id/answer_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="#1F1F1F"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/answer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:textColor="#FFF" />
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnSendText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Text"
+        android:visibility="gone"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/startws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start WebSocket"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/stopws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Stop WebSocket"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/playmys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play My Sound"
+        android:visibility="gone"
+        android:layout_marginTop="20dp" />
+
+    <!-- Existing Views -->
+    <com.navbot.aihelper.CircleWaveView
+        android:id="@+id/circle_wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_close"
+        android:visibility="gone" />
+
+
+
+
+    <Button
+        android:id="@+id/btn_clear_and_reset"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/red"
+        android:visibility="gone"
+        android:text="clear and reset"
+        android:textSize="10sp"/>
+
+
+
+
+</LinearLayout>

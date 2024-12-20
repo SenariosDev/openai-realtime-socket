@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Base" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- 去除ActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!-- 自定义Toolbar字体颜色 -->
+        <!--<item name="titleTextColor">@color/dark_gray</item>-->
+        <!--<item name="android:actionMenuTextColor">@color/dark_gray</item>-->
+        <item name="alertDialogTheme">@style/AppDialogTheme</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <!--        适配暗黑模式-->
+    </style>
+
+    <!-- 应用对话框样式 注意此处的parent,这个parent保证了dialog默认为material design规范的大小 -->
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- 按钮文字颜色 -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 主要文字颜色 -->
+        <!--<item name="android:textColorPrimary">@color/dark_text</item>-->
+        <!-- 对话框背景颜色 -->
+        <!--<item name="android:background">#4CAF50</item>-->
+
+    </style>
+
+
+    <!-- 自定义按钮样式 -->
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item> <!-- 按钮背景白色 -->
+        <item name="android:textColor">@color/black</item> <!-- 按钮文字黑色 -->
+    </style>
+</resources>

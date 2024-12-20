@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00C853"/>  <!-- 绿色背景 -->
+
+    <corners android:radius="8dp"/>
+
+    <!-- 为气泡添加一个小的尖角，类似微信气泡的样式 -->
+    <padding
+        android:left="10dp"
+        android:right="10dp"
+        android:top="5dp"
+        android:bottom="5dp"/>
+</shape>

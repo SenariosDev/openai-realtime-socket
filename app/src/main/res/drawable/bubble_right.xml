@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 气泡本身 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00C853" /> <!-- 绿色背景 -->
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <!-- 右侧箭头 -->
+    <item
+        android:top="20dp"
+        android:right="0dp"
+        android:bottom="20dp"
+        android:gravity="end|center_vertical">
+        <shape android:shape="rectangle">
+            <solid android:color="#00C853" />
+            <path
+                android:fillColor="#00C853"
+                android:pathData="M 0,0 L 20,10 L 0,20 Z" />
+        </shape>
+    </item>
+
+</layer-list>

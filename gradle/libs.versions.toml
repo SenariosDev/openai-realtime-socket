@@ -1,0 +1,57 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.0"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.6.0"
+composeBom = "2023.08.00"
+appcompat = "1.6.1"
+retrofit = "2.6.0"
+adapter_rxjava = "2.6.0"
+converter_scalars = "2.6.0"
+lifecycle-viewmodel-compose = "1.0.0-alpha07"
+recyclerview = "1.2.0-alpha03"
+material = "1.10.0"
+backgroundLibrary = "1.7.6"
+utilcodex = "1.31.1"
+cameraCore = "1.3.4"
+cameraView = "1.3.4"
+cameraLifecycle = "1.3.4"
+okhttpVersion = "4.9.3"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+adapter_rxjava = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "adapter_rxjava" }
+converter_scalars = { module = "com.squareup.retrofit2:converter-scalars", version.ref = "converter_scalars" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
+backgroundLibrary = { module = "com.github.JavaNoober.BackgroundLibrary:library", version.ref = "backgroundLibrary" }
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "cameraCore" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraLifecycle" }
+okhttp3-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttpVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

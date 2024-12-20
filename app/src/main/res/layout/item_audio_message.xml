@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_gpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+        <!-- 左侧头像，GPT发送的消息使用 -->
+        <ImageView
+            android:id="@+id/avatar_gpt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_avater"
+            android:visibility="visible" /> <!-- 默认隐藏，接收者消息时显示 -->
+        <LinearLayout
+            android:id="@+id/ll_voice_gpt"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voice_message_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"> <!-- 使用 layout_weight 填满中间部分 -->
+
+
+            <!-- 播放按钮 -->
+            <ImageView
+                android:id="@+id/playButton_gpt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="Play Audio"
+                android:src="@drawable/ic_play_arrow1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+
+        <!-- 语音消息气泡 -->
+        <LinearLayout
+            android:id="@+id/ll_voice_user"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voice_message_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"> <!-- 使用 layout_weight 填满中间部分 -->
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- 播放按钮 -->
+            <ImageView
+                android:id="@+id/playButton_user"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:contentDescription="Play Audio"
+                android:src="@drawable/ic_play_arrow" />
+
+
+        </LinearLayout>
+
+        <!-- 右侧头像，用户发送的消息使用 -->
+        <ImageView
+            android:id="@+id/avatar_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_avater"
+            android:visibility="visible" /> <!-- 默认隐藏，发送者消息时显示 -->
+
+
+    </LinearLayout>
+
+</LinearLayout>
