@@ -103,8 +103,6 @@ class RealTimeActivity : ComponentActivity() {
         val client = okhttp3.OkHttpClient()
         val request = okhttp3.Request.Builder()
             .url(Config.WSURL)
-            .addHeader("Authorization", "Bearer ${Config.OPENAI_API_KEY}")
-            .addHeader("OpenAI-Beta", "realtime=v1")
             .build()
 
         webSocket = client.newWebSocket(request, object : okhttp3.WebSocketListener() {
